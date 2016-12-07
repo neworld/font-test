@@ -2,19 +2,31 @@
 <head>
 <style type="text/css">
 @font-face {
-    font-family: MyFont;
+    font-family: MyFontOTF;
     src: url("file:///android_asset/fonts/MyFont.otf")
 }
-.font-test {
-    font-family: MyFont;
+@font-face {
+    font-family: MyFontWOFF;
+    src: url("file:///android_asset/fonts/MyFont.woff")
+}
+.font-test-otf {
+    font-family: MyFontOTF;
+    font-size: medium;
+    text-align: justify;
+}
+.font-test-woff {
+    font-family: MyFontWOFF;
     font-size: medium;
     text-align: justify;
 }
 </style>
 </head>
 <body>
-  <div class="font-test">
+  <div class="font-test-otf">
     With custom OTF font
+  </div>
+  <div class="font-test-woff">
+    With custom WOFF font
   </div>
   <div>
     Text without font
